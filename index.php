@@ -40,7 +40,6 @@
         <div class="title">stripe DE おかいもの</div>
         <div class="price">¥100</div>
         <form action="./payment.php" method="POST">
-            <!-- data-key="pk_test_SHvuNP7kAd8aIZyo6YlIEUBm"  todo:管理画面ではどこにあるのか？スライドに記す。.envファイルで管理した方が良さそうとの伝える。-->
             <script
                 src="https://checkout.stripe.com/checkout.js" class="stripe-button"
                 data-key="<?php echo getenv('STRIPE_PUBLIC_API_KEY') ?>"
